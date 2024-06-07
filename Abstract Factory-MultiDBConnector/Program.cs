@@ -23,7 +23,7 @@ namespace Abstract_Factory_MultiDBConnector
 
                 using (IDbCommand sqlServerCommand = sqlServerFactory.CreateCommand("SELECT * FROM TableName", sqlServerConnection))
                 {
-                    // Diğer işlemler...
+                    // İşlemler
                 }
                 sqlServerConnection.Close();
             }
@@ -39,7 +39,7 @@ namespace Abstract_Factory_MultiDBConnector
 
                 using (IDbCommand mySqlCommand = mySqlFactory.CreateCommand("SELECT * FROM TableName", mySqlConnection))
                 {
-                    // Diğer işlemler...
+                    // İşlemler
                 }
                 mySqlConnection.Close();
             }
@@ -54,7 +54,7 @@ namespace Abstract_Factory_MultiDBConnector
 
                 using (IDbCommand postgreSqlCommand = postgreSqlFactory.CreateCommand("SELECT * FROM TableName", postgreSqlConnection))
                 {
-                    // Diğer işlemler...
+                    // İşlemler
                 }
                 postgreSqlConnection.Close();
             }
